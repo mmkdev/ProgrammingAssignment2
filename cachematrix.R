@@ -6,20 +6,20 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 	
-	##Clears variable if already set by the caller
+	#Clears variable if already set by the caller
 	m <- NULL
-	##Lets you set the Matrix
+	#Lets you set the Matrix
    set <- function(y) {
    		x <<- y
    		m <<- NULL
    }
-   ##Lets you get the Matrix
+   #Lets you get the Matrix
    get <- function() x
    
-   ##Lets you set the inverse of a Matrix
+   #Lets you set the inverse of a Matrix
    setInverse <- function(inverse) m <<- inverse
    
-   ##Lets you get the invese Matrix you saved
+   #Lets you get the invese Matrix you saved
    getInverse <- function() m
    list(set = set, get = get,
              setInverse = setInverse,
