@@ -6,9 +6,9 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 	
-	#Clears variable if already set by the caller
-	m <- NULL
-	#Lets you set the Matrix
+   #Clears variable if already set by the caller
+   m <- NULL
+   #Lets you set the Matrix
    set <- function(y) {
    		x <<- y
    		m <<- NULL
